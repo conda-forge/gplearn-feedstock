@@ -1,5 +1,5 @@
 {% set name = "gplearn" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/trevorstephens/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: b4ef6139bb8407dd982310a2d227ef11af7a298d1ede82aeb2f0dd55ac3a7bf8
+  sha256: 0dbeecc9b648d26be6445fd3ac1d5744057faa67b26ce2369dbbd6df49560e74
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -32,7 +32,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'gplearn implements Genetic Programming in Python, with a scikit-learn inspired and compatible API'
+  summary: gplearn implements Genetic Programming in Python, with a scikit-learn inspired and compatible API
 
   description: |
     gplearn is purposefully constrained to solving symbolic regression
