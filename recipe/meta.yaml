@@ -10,7 +10,7 @@ source:
   sha256: 0dbeecc9b648d26be6445fd3ac1d5744057faa67b26ce2369dbbd6df49560e74
 
 build:
-  noarch: python >=3.8
+  noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,7 +19,7 @@ requirements:
     - python >=3.8
     - pip
   run:
-    - python
+    - python >=3.8
     - scikit-learn >=1.0.2
     - joblib >=1.0.0
 
