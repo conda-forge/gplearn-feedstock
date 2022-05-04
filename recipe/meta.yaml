@@ -16,12 +16,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.8
     - pip
   run:
     - python
-    - scikit-learn >=0.22.1
-    - joblib >=0.13.0
+    - scikit-learn >=1.0.2
+    - joblib >=1.0.0
 
 test:
   imports:
