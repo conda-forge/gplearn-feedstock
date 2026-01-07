@@ -41,7 +41,7 @@ about:
     gplearn is purposefully constrained to solving symbolic regression
     problems. gplearn retains the familiar scikit-learn fit/predict API
     and works with the existing scikit-learn pipeline and grid search modules.
-    gplearn is built for Python 3.5+ and requires scikit-learn
+    gplearn is built for Python 3.11+ and requires scikit-learn
   doc_url: https://gplearn.readthedocs.io/
   dev_url: https://github.com/trevorstephens/gplearn/
 
