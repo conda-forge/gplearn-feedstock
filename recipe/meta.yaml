@@ -1,5 +1,5 @@
 {% set name = "gplearn" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/trevorstephens/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 0dbeecc9b648d26be6445fd3ac1d5744057faa67b26ce2369dbbd6df49560e74
+  sha256: f9076f105e00c20aee9dc4c18e68ee537309d9c8294b49bbc75caa87fdab7d0f
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
